@@ -1,0 +1,25 @@
+.jwModal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    background-color: rgba(0, 0, 0, .75);
+    padding: 40px;
+    overflow: auto;
+}
+
+.jwModal.open {
+    display: block;
+}
+
+.jwModalBody {
+    border: solid 5px #ccc;
+    border-radius: 20px;
+}
+
+.jwModal iframe {
+    min-width: 100%;
+    min-height: 80vh;
+    border-radius: 20px;
+}
+

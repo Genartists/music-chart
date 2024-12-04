@@ -1,0 +1,52 @@
+.bottomContainer {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.navBottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    list-style: none;
+}
+
+.navBottom .navLink {
+    font-weight: 300;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.navBottom > li:last-child a {
+    background-image: linear-gradient(90deg, #0072ff 0%, #00d4ff 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btnUp {
+    border: 2px solid black;
+    background-color: white;
+    width: fit-content;
+    padding: 16px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: #0072FFFF;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.btnUp:hover {
+    color: white;
+    background-image: linear-gradient(90deg, coral 0%, orange 100%);
+}
+
+.link {
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+

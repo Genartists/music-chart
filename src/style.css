@@ -1,0 +1,44 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --font-size: 16px;
+    --heading-font-size: 32px;
+    --margin: 10px;
+    --min-font-size: 1rem;
+    --max-font-size: 1.5rem;
+    --min-viewport-width: 400px;
+    --max-viewport-width: 900px;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-optical-sizing: auto;
+    background-color: white;
+    color: var(--primary-color);
+    font-size: calc(
+            var(--min-font-size) +
+            (var(--max-font-size) - var(--min-font-size)) *
+            ((100vw - var(--min-viewport-width)) / (var(--max-viewport-width) - var(--min-viewport-width)))
+    );
+}
+
+main {
+    grid-column-gap: 24px;
+    grid-template-columns: 4.25fr;
+    max-width: 1300px;
+    margin: .8rem auto 4rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: var(--heading-font-size);
+}
+
+hr {
+    width: 40%;
+    margin: 100px auto 0;
+    border-color: rgba(255, 255, 255, 0.1);
+}

@@ -1,0 +1,75 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+.heroMain {
+    margin: .8rem 4rem;
+    margin-bottom: 8rem;
+}
+
+/*.animation::before {*/
+/*    content: "";*/
+/*    animation: 0.3s ease-out 0.3s 1 normal forwards running appear;*/
+/*    z-index: -1;*/
+/*    background: linear-gradient(45deg, transparent 50%, 0px, rgb(255, 255, 255));*/
+/*    position: absolute;*/
+/*    top: 0px;*/
+/*    right: 0px;*/
+/*    height: 200%;*/
+/*    width: 200%;*/
+/*}*/
+.textIntro {
+    max-width: 35rem;
+    height: 125px;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0 0 10px;
+    letter-spacing: -0.1px;
+    line-height: 1.25;
+    color: #2c3e50;
+}
+.heroFlex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fillColor {
+    background-image: linear-gradient(90deg, #0072ff 0%, #00d4ff 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+.button {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: .5rem 2rem;
+    text-transform: capitalize;
+    background-image: radial-gradient(circle, #5c0067 0%, #00d4ff 100%);
+    border: 1px #000;
+    cursor: pointer;
+    transition: 0.4s ease;
+    border-radius: 200px;
+}
+@keyframes appear {
+    100% {
+        transform: translate(50%, -50%);
+    }
+}
+.button a {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    padding: 6px 24px;
+    display: flex;
+    font-weight: 600;
+}
+
+.button:hover {
+    background-image: linear-gradient(90deg, coral 0%, orange 100%);
+}
+

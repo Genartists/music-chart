@@ -1,0 +1,67 @@
+.artistsContainer {
+    display: flex;
+    flex-flow: row;
+}
+
+.artistsContainer Col {
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.artistBg {
+    background: #0072ff;
+    padding: 5%;
+}
+.artistBg h1 {
+    font-size: 10rem;
+    color: white;
+}
+.artistsContainer Col:hover {
+    color: white;
+    font-weight: 600;
+    background-image: linear-gradient(90deg, #0072ff 0%, #00d4ff 100%);
+}
+.artistsContainer Col h3 {
+    color: black;
+}
+
+.artistsContainer Col:hover h3 {
+    color: white;
+}
+
+.block {
+    animation: appear ease-in forwards;
+    animation-range: entry 0% cover 40%;
+}
+.cardHover {
+    transition: all 0.2s;
+}
+.cardHover:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    box-shadow: 12px 12px 0px 1px rgba(0,0,0, 1);
+}
+.titleGlobal{
+    font-weight: 900;
+    font-size: 30px;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/*.cardHead {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*}*/
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
+

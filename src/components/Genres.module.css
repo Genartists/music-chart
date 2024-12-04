@@ -1,0 +1,28 @@
+.genreContainer {
+    display: flex;
+    flex-flow: row;
+    gap: 10px;
+}
+
+.cardHover {
+    transition: all 0.2s;
+}
+.cardHover:hover {
+    cursor: pointer;
+    color: white;
+    background-image: linear-gradient(90deg, #0072ff 0%, #00d4ff 100%);
+    transform: scale(1.03);
+}
+
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
