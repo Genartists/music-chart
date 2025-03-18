@@ -12,25 +12,38 @@ const Footer = () => {
     };
 
     return (
-        <footer>
-            <div className={styles.bottomContainer}>
-                <div className={styles.containerNav}>
-                    <nav>
-                        <ul className={styles.navBottom}>
-                            <li><a href="" className={styles.navLink}>Policy</a></li>
-                            <li><a href="" className={styles.navLink}>Term of Use</a></li>
-                            <li><a href="" className={styles.navLink}>Accessibility</a></li>
-                            <li><a href="" className={styles.navLink}>© Sporticloud</a></li>
+        <footer className={styles.footer}>
+            <div className={styles.container}>
+                <div className={styles.logoSection}>
+                    <a href="/" className={styles.logo}>
+                        <h1>Sporticloud</h1>
+                    </a>
+                </div>
+                <div className={styles.linksSection}>
+                    <div className={styles.linkColumn}>
+                        <ul className={styles.linkList}>
+                            <h3 className={styles.columnTitle}>Helpful Links</h3>
+                            <li><a href="#" className={styles.link}>Podcast Charts</a></li>
+                            <li><a href="#" className={styles.link}>Spotify for Artists</a></li>
                         </ul>
-                    </nav>
+                    </div>
+                    <div className={styles.linkColumn}>
+                        <ul className={styles.linkList}>
+                            <h3 className={styles.columnTitle}>Need help?</h3>
+                            <li><a href="#" className={styles.link}>Contact us</a></li>
+                            <li><a href="#" className={styles.link}>FAQ</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <a className={styles.link} href="#top" id="up-button" onClick={scrollToTop}>
-                <div className={styles.btnUp}>up</div>
+            <div className={styles.bottomSection}>
+                <span className={styles.copyright}>© 2024 Sporticloud AB</span>
+            </div>
+            <a className={styles.scrollToTop} href="#top" onClick={scrollToTop}>
+                <div className={styles.scrollToTopButton}>↑</div>
             </a>
         </footer>
     );
 }
 
 export default Footer;
-

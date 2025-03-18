@@ -1,0 +1,121 @@
+/*ol {*/
+/*    padding-left: 2rem;*/
+/*}*/
+.container {
+    padding: 80px 20px;
+}
+
+.chartHeadContainer {
+    max-width: 1555px;
+}
+
+.chartHeadContainer h2 {
+    margin-bottom: 30px;
+    font-size: 3rem;
+}
+.chartHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.switchHandler{
+    margin-left: 40px;
+    margin-top: 10px;
+
+}
+.switchHandler button {
+    background: #05AFF2;
+    border-radius: 200px;
+    line-height: 30px;
+    border: none;
+    font-weight: 700;
+}
+
+.switchHandler button:hover {
+    background: #000;
+}
+
+.miniDate {
+    margin-bottom: 56px;
+    color: #656565;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.miniDate > * {
+    padding-left: 5px;
+}
+
+
+.flexChart {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0 0;
+    padding: 24px 32px;
+    background: #05AFF2;
+    border-radius: 10px;
+    align-items: center;
+
+}
+
+.redBackground {
+    background-color: #D92938;
+    color: white;
+}
+
+.flexChart * {
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.flexChartInner {
+    display: flex;
+    align-items: center;
+}
+
+.flexChartInner img {
+    height: 96px;
+    width: 96px;
+    object-fit: cover;
+    z-index: 1;
+    margin-left: 16px;
+}
+.artistSong h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.artistSong span {
+    color: #010D26;
+}
+
+.text {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.chartNumber {
+    margin-right: 50px;
+
+}
+
+.chartImages {
+    margin-right: 80px;
+
+}
+.chartImages img {
+    border: 3px solid white;
+}
+.directBtn {
+    border-radius: 200px;
+    background: white;
+    border: 3px black solid;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+.directBtn:hover {
+    border: 3px black solid;
+    background: black;
+    color: white;
+}

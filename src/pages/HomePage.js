@@ -2,13 +2,21 @@ import Header from '../components/Header';
 import TopHit from "../components/TopHits";
 import Footer from "../components/Footer";
 import Modal from "../components/Modal";
-
+import Artist from "../components/Artists";
+import {Container} from "react-bootstrap";
 const HomePage = () => {
-    return(
+    return (
         <div>
             <Header/>
             <main>
-                <TopHit/>
+                <Container>
+                    <div style={{marginBottom: "8rem"}}>
+                        <TopHit/>
+                    </div>
+                    <div style={{marginBottom: "8rem"}}>
+                        <Artist/>
+                    </div>
+                </Container>
             </main>
             <hr className="line"/>
             <Footer/>

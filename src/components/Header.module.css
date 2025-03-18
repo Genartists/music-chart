@@ -8,9 +8,10 @@
     position: relative;
     margin: 0 auto 4rem;
     padding: 30px 48px;
-    animation-name: showup;
+    animation-name: showup2;
     animation-duration: 1s;
     animation-timing-function: ease;
+    border-bottom: 3px white solid;
 }
 
 .navMenu {
@@ -64,20 +65,10 @@
     transition: all 0.2s;
 }
 
-/*.navLink::after {*/
-/*    content: "";*/
-/*    position: absolute;*/
-/*    background-color: #0a53be;*/
-/*    height: 3px;*/
-/*    width: 0;*/
-/*    left: 0;*/
-/*    bottom: -5px;*/
-/*    transition: 0.3s;*/
-/*}*/
 
 .navLink:hover {
     box-shadow: 12px 12px 0px 1px rgba(0,0,0, 1);
-
+    transform: translate(-4px, -4px);
 }
 
 .navLink:hover::after {
@@ -95,10 +86,38 @@
     }
 }
 .heroHead h1{
-    background-image: linear-gradient(90deg, #0072ff 0%, #00d4ff 100%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: white;
     font-family: "Montserrat", sans-serif;
+}
+
+.heroHead h1 a {
+    color: #0072ff;
+    font-size: 50px;
+}
+
+
+.containerHeroChart {
+    display: block;
+    background-color: blue;
+
+}
+
+.heroChart {
+    width: 100%;
+    display: block;
+    padding: 80px 64px;
+    color: white;
+    animation-name: appear2;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+
+.heroChart h1 {
+    color: white;
+    font-size: 70px;
+    font-weight: 900;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
 }
 
 .heroMain {
@@ -106,17 +125,30 @@
     margin-bottom: 8rem;
 }
 
-/*.animation::before {*/
-/*    content: "";*/
-/*    animation: 0.3s ease-out 0.3s 1 normal forwards running appear;*/
-/*    z-index: -1;*/
-/*    background: linear-gradient(45deg, transparent 50%, 0px, rgb(255, 255, 255));*/
-/*    position: absolute;*/
-/*    top: 0px;*/
-/*    right: 0px;*/
-/*    height: 200%;*/
-/*    width: 200%;*/
-/*}*/
+
+.heroStat {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-weight: 500;
+}
+
+.heroImgContainer {
+    margin: auto;
+}
+
+.heroImgContainer img {
+    margin-top: 80px;
+    height: 500px;
+    width: 500px;
+    border: 10px solid white;
+}
+.trackInfo {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
 .textIntro {
     max-width: 35rem;
     height: 125px;
@@ -140,7 +172,7 @@
     background-image: linear-gradient(90deg, #0072ff 0%, #00d4ff 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 330px;
+    font-size: 465px;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -176,6 +208,18 @@
     100% {
         transform: translate(50%, -50%);
     }
+}
+
+@keyframes appear2 {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
 }
 .button a {
     font-family: "Poppins", sans-serif;

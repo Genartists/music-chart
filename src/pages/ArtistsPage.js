@@ -1,14 +1,14 @@
 import Footer from "../components/Footer";
 import Modal from "../components/Modal";
-import Artists from "../components/Artists";
 import HeaderArtist from "../components/HeaderArtists";
+import {MusicChart} from "../components/Chart";
 
 const HomePage = () => {
     return(
         <div>
             <HeaderArtist/>
             <main>
-                <Artists/>
+                <MusicChart/>
             </main>
             <Footer/>
             <Modal/>

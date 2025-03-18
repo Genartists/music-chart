@@ -12,8 +12,7 @@ const Header = () => {
                 <nav>
                     <ul className={styles.navMenu}>
                         <li className={`${styles.child}`}><Link to="/" className={`${styles.navLink}`}>Home</Link></li>
-                        <li className={`${styles.child}`}><Link to="/artists"
-                                                                className={`${styles.navLink}`}>Artists</Link></li>
+                        <li className={`${styles.child}`}><Link to="/chart" className={`${styles.navLink}`}>Charts</Link></li>
                         {/*<Link className={styles.child}><a href="#instruments" className={styles.navLink}>Instruments</a></Link>*/}
                     </ul>
                 </nav>

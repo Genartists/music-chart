@@ -1,52 +1,126 @@
-.bottomContainer {
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-}
-
-.navBottom {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    list-style: none;
-}
-
-.navBottom .navLink {
-    font-weight: 300;
-    font-size: 12px;
-    text-decoration: none;
-}
-
-.navBottom > li:last-child a {
-    background-image: linear-gradient(90deg, #0072ff 0%, #00d4ff 100%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.btnUp {
-    border: 2px solid black;
-    background-color: white;
-    width: fit-content;
-    padding: 16px;
-    border-radius: 50%;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    color: #0072FFFF;
-    font-weight: bold;
-    transition: 0.3s ease;
-}
-
-.btnUp:hover {
+.footer {
+    background-color: black;
     color: white;
-    background-image: linear-gradient(90deg, coral 0%, orange 100%);
+    padding: 48px 40px;
+    position: relative;
+}
+
+.container {
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.logoSection {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+.logoSection h1 {
+    color: white;
+}
+
+.logo {
+    display: inline-block;
+}
+
+.logoImage {
+    height: 40px;
+    width: auto;
+}
+
+.linksSection {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.linkColumn {
+    flex: 0 0 48%;
+    max-width: 48%;
+    margin-bottom: 24px;
+}
+
+.columnTitle {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: white;
+    margin-top: 20px;
+}
+
+.linkList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .link {
+    color: #919496;
+    font-size: 16px;
+    line-height: 1.5;
     text-decoration: none;
-    transition: 0.3s ease;
+    transition: color 0.2s;
+}
+
+.link:hover {
+    color: white;
+}
+
+.bottomSection {
+    border-top: 1px solid #282828;
+    padding-top: 24px;
+    margin-top: 48px;
+    text-align: right;
+}
+
+.copyright {
+    color: #919496;
+    font-size: 12px;
+}
+
+.scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-decoration: none;
+}
+
+.scrollToTopButton {
+    background-color: white;
+    color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.scrollToTopButton:hover {
+    background-color: blue;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .logoSection {
+        flex: 0 0 25%;
+        max-width: 25%;
+        margin-bottom: 0;
+    }
+
+    .linkColumn {
+        flex: 0 0 auto;
+        max-width: none;
+        margin-bottom: 0;
+    }
 }
 
