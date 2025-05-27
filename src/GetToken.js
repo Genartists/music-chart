@@ -1,5 +1,5 @@
-const client_id = '2fe0769f35b340d08cd82a7932442338';
-const client_secret = '65274f57b6ff4dc88d72b5b549f1255d';
+const client_id = '';
+const client_secret = '';
 
 // function to get access key from spotify
 export async function getToken() {
