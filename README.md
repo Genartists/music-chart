@@ -23,10 +23,7 @@ A modern, responsive music chart web application that displays real-time top mus
 
 - 🔍 Fetches and displays top tracks from Spotify
 - 💡 Uses SWR for efficient data caching and revalidation
-- 📱 Fully responsive layout using Bootstrap
 - ⚡ Deployed with zero-config using Vercel
 
----
 
-## 📁 Project Structure
 
